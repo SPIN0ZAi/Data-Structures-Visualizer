@@ -9,6 +9,7 @@ import CodeLab from './pages/CodeLab'
 import SortingVisualizer from './pages/SortingVisualizer'
 import PathfindingVisualizer from './pages/PathfindingVisualizer'
 import GNDEVisualizer from './pages/GNDEVisualizer'
+import DekkerVisualizer from './pages/DekkerVisualizer'
 import Problems from './pages/Problems'
 import ProblemSolver from './pages/ProblemSolver'
 
@@ -34,6 +35,7 @@ function App() {
         <Route path="/sorting" element={<SortingVisualizer />} />
         <Route path="/pathfinding" element={<PathfindingVisualizer />} />
         <Route path="/gnde" element={<GNDEVisualizer />} />
+        <Route path="/dekker" element={<DekkerVisualizer />} />
         <Route path="/codelab" element={<CodeLab />} />
         {/* Redirect old profile to community */}
         <Route path="/profile" element={<Navigate to="/community" replace />} />

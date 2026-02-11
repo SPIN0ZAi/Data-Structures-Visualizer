@@ -235,6 +235,10 @@ function Layout({ children }: LayoutProps) {
               <span className="drawer-icon">🏗️</span>
               <span>Graph Construction</span>
             </NavLink>
+            <NavLink to="/dekker" className={({ isActive }) => `drawer-link ${isActive ? 'active' : ''}`} onClick={handleNavClick}>
+              <span className="drawer-icon">🔒</span>
+              <span>Dekker's Algorithm</span>
+            </NavLink>
           </div>
 
           <div className="drawer-section">
@@ -365,6 +369,13 @@ function Layout({ children }: LayoutProps) {
               onClick={handleNavClick}
             >
               🏗️ Graph Construction
+            </NavLink>
+            <NavLink
+              to="/dekker"
+              className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
+              onClick={handleNavClick}
+            >
+              🔒 Dekker's Algorithm
             </NavLink>
             <NavLink
               to="/problems"

@@ -52,6 +52,13 @@ const modules = [
     icon: '🗺️',
     path: '/pathfinding',
   },
+  {
+    id: 'dekker',
+    title: "Dekker's Algorithm",
+    description: 'Interactive simulation of mutual exclusion for concurrent processes with step-by-step visualization.',
+    icon: '🔒',
+    path: '/dekker',
+  },
 ]
 
 function Home() {
@@ -113,6 +120,7 @@ function Home() {
           <li><strong>Graph Algorithms:</strong> Depth-first search (DFS) and breadth-first search (BFS)</li>
           <li><strong>Floyd-Warshall:</strong> All-pairs shortest paths, cycles, path reconstruction</li>
           <li><strong>Huffman Coding:</strong> Building Huffman trees, generating optimal codes</li>
+          <li><strong>Dekker's Algorithm:</strong> Mutual exclusion, concurrent process synchronization, critical sections</li>
         </ul>
       </section>
 
